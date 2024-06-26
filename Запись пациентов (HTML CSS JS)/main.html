@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+
+		<div id="sidebar">
+
+			<div id="date-block">
+				<h3>ДАТА ЗАПИСИ</h3>
+				<input type="date" name="calendar">
+			</div>
+
+			<div id="masters-block">
+				<h3>СПЕЦИАЛИСТЫ <span id="count-info"></span></h3>
+				<div id="masters-list">
+					<div class="master-card" id="masterForCopy">
+						<input type="checkbox" id="vehicle1">
+						<label for="vehicle1"> I have a bike</label><br>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="main-content">
+
+            <div class="modal" id="add-sign">
+            	<div class="modal-window">
+            		<h2>Запись на прием</h2>
+            		<div class="input-block">
+            			<lable for="input-date">Дата</lable>
+	                    <input type="text" id="input-date" readonly />
+                    </div>
+                    
+                    <div class="input-block">
+                    	<lable for="input-time">Время</lable>
+	                    <input type="text" id="input-time" readonly />
+                    </div>
+
+                    <div class="input-block">
+                    	<lable for="input-master">Специалист</lable>
+	                    <input type="text" id="input-master" readonly />
+                    </div>
+
+                    <div class="input-block">
+                    	<lable for="input-patient">ФИО</lable>
+	                    <input type="text" id="input-patient" />  
+                    </div>
+
+                    <button class="btn-sign">Записаться</button>
+            		<button class="btn-close">x</button>
+            	</div>
+
+            	<div class="overlay"></div>
+            </div>
+
+			<div id="main-header">
+			    <h2>Расписание специалистов</h2>
+		    </div>
+
+            <div id="schedules-block">
+            	<div id="schedules-list">
+            		<div class="schedule-card" id="scheduleForCopy">
+
+            			<div class="dateHeader">Вт. 30 апр.</div>
+            			<div class="nameHeader">Арончикова-Буланова Л.И.</div>
+
+            			<div id="time-list">
+                            <div class="time-card" id="timeForCopy">8:30</div>
+            			</div>
+            		</div>
+                </div>
+            </div>
+
+		</div>
+
+	</div>
+	<script src="masters.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

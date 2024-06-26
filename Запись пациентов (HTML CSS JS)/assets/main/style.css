@@ -191,6 +191,13 @@ body {
 #main-header {
     flex: 0 0 auto;
 	border-bottom: 2px solid gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#main-header a {
+	margin-right: 20px;
 }
 
 #main-header h2 {

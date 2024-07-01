@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+:host {
+	flex: 0 0 auto;
+	border-bottom: 2px solid gray;
+}
+
+h3 {
+	margin-left: 30px;
+	margin-bottom: 0;
+}
+
+:host ::ng-deep .p-calendar {
+	margin: 5px 25px 10px 25px;
+	width: calc(100% - 50px);
+	font-size: 18px;
+}

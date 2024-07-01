@@ -1,0 +1,89 @@
+/*  GENERAL  */
+
+* {
+	box-sizing: border-box;
+}
+
+:host {
+	display: flex;
+	min-height: 0;
+}
+
+#sidebar {
+	width: 30%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid gray;
+}
+
+#main-content {
+	width: 70%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	border-left: 1px solid gray;
+}
+
+#masters-block {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+}
+
+#masters-list {
+	margin: 5px;
+	margin-top: 0;
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow: auto;
+}
+
+#main-header {
+    flex: 0 0 auto;
+	border-bottom: 2px solid gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#schedules-block {
+	flex: 1 1 auto;
+    display: flex;
+    min-height: 0;
+}
+
+#schedules-list {
+	flex: 1 1 auto;
+	margin: 5px;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	display: flex;
+	overflow-x: auto;
+	border-radius: 5px 5px 0 0;
+}
+
+#count-info {
+	font-size: 12px;
+}
+
+#masters-block h3 {
+	margin-left: 30px;
+	display: block;
+	flex: 0 0 auto;
+}
+
+#main-header a {
+	margin-right: 20px;
+}
+
+#main-header h2 {
+	margin-left: 25px;
+}

@@ -1,0 +1,20 @@
+:host {
+	background-color: white;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+:host:hover {
+	background-color: lightgray;
+}
+
+:host ::ng-deep .p-element {
+	margin: 20px 10px 20px 20px;
+}
+
+:host ::ng-deep .p-icon-wrapper {
+	margin-right: 19px;
+}
